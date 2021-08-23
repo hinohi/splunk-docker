@@ -1,0 +1,19 @@
+version: '3.8'
+
+volumes:
+  var:
+  etc:
+
+services:
+  splunk:
+    image: splunk/splunk:8.2
+    container_name: splunk
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD
+    ports:
+      - 8000:8000
+      - 8088:8088
+    volumes:
+      - var:/opt/splunk/var
+      - etc:/opt/splunk/etc
