@@ -1,12 +1,10 @@
-version: '3.8'
-
 volumes:
   var:
   etc:
 
 services:
   splunk:
-    image: splunk/splunk:9.0
+    image: splunk/splunk:9.3
     container_name: splunk
     environment:
       - SPLUNK_START_ARGS=--accept-license
