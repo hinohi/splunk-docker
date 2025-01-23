@@ -4,7 +4,7 @@ volumes:
 
 services:
   splunk:
-    image: splunk/splunk:9.3
+    image: splunk/splunk:9.4
     container_name: splunk
     environment:
       - SPLUNK_START_ARGS=--accept-license
