@@ -4,7 +4,7 @@ volumes:
 
 services:
   splunk:
-    image: splunk/splunk:10.0
+    image: splunk/splunk:10.2
     container_name: splunk
     environment:
       - SPLUNK_GENERAL_TERMS=--accept-sgt-current-at-splunk-com
